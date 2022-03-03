@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* /* box-sizing: border-box; */
+    /* border:dashed; */
+    }
+
+body {
+  background-image: url('assets/clouds2.png'), url('assets/Bg-no\ clouds.png');
+  background-size: contain, cover; 
+  /* animation: fadeInUpBig; */
+  /* animation-duration: 4s; */
+  /* url('assets/clouds2.png') */
+  /* background-image: url('assets/Bg-no\ clouds.png'); */
+}
+.background-image{
+  animation: fadeInUpBig;
+  animation-duration: 4s;
+  
+}
+/* the main container */
+
+.card{
+ width: 419px;;
+ height: 740px;;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(37, 70, 39);
+  border-radius: 25px;
+}
+
+
+
+.front-card{
+
+  background-image: url('assets/frontcard2.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+ 
+.back-card {
+  background-image: url('assets/backcard2.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+h1{
+  /* to left align text */
+  font-size: 45pt;
+  color: white;
+  margin-top: 90px;
+  margin-left: 70px;
+  font-family: 'Grandstander', cursive;
+  font-weight: bold;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.back-text {
+  margin-top: 100px;
+  margin: 300px;
+}
+
+h2{
+  font-size: 20pt;
+  color: rgb(248, 237, 187);
+  margin-top: 50px;
+  margin-bottom: -23px;
+  margin-left: 50px;
+  font-family: 'Grandstander', cursive;
+  font-weight: normal;
+  line-height: 10px;
+  text-align: center;
+}
+
+h3{
+  font-size: 4em;
+  color: rgb(155, 4, 4);
+  margin-top: 200px;
+  margin-left: 160px;
+  font-family: 'Grandstander', cursive;
+}
+
+
+h4{
+  font-size: 14pt;
+  color: rgb(155, 4, 4);
+  margin-top: 40px;
+  margin-left: 10px;
+  font-family: 'Grandstander', cursive;
+  font-weight: lighter;
+  text-align: center;
+  
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+h4:hover {
+  color: rgb(250, 164, 4);
+}
+
+
+
+.icon1 {
+ width: 60px;
+ height: 50px;
+ margin-top: 0px;
+ margin-left: -5px;
+ position: absolute;
+ color: rgb(155, 4, 4); 
+}
+ 
+
+.icon2{
+  width: 50px;
+  margin-top: 73px;
+  margin-left: 53px;
+  position: absolute;
+  color: rgb(155, 4, 4);
+ }
+
+
+.icon-container{ 
+  width: 100%;
+  /* enables use of css grid */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr ;
+} 
+
+svg {
+  fill: darkred;
+  /* width: 40px; */
+  margin-top: 15px;
+  margin-left: 20px;
+  position: absolute; 
+  
+}
+
+svg:hover{
+  fill:rgb(250, 164, 4);
+  animation: swing; /* referring directly to the animation's @keyframe declaration*/
+  animation-duration: 2s;  
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .card{
+  /* width:40%; */
+  width:419px;
+  height:740px;
+}
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: blueviolet;
+  }
+  .card{
+  /* width:30%; */
+  width: 419px;
+  height:740px;
+
+}
+}
