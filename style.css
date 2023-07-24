@@ -34,13 +34,13 @@ body {
 
 .front-card{
 
-  background-image: url('assets/new front card.jpg');
+  background-image: url('assets/newfrontcard.jpg');
   background-repeat: no-repeat;
   background-size:cover;
 }
  
 .back-card {
-  background-image: url('assets/new back card.jpg');
+  background-image: url('assets/newbackcard.jpg');
   background-repeat: no-repeat;
   background-size:cover;
 }
